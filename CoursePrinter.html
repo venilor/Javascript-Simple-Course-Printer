@@ -3,7 +3,9 @@
 	</head>
 	<body>
 		<script>
-			$.get("https://floridapolytechnic.instructure.com/api/v1/courses/");
+			var xhttp = new XMLHttpRequest();
+			xhttp.open("GET","https://floridapolytechnic.instructure.com/api/v1/courses/");
+			xhttp.send();
 		</script>
 	</body>
 </html>
