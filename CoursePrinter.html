@@ -2,6 +2,8 @@
 	<head>
 	</head>
 	<body>
+		<section id="textbody">
+		</section>
 		<script>
 			var xhttp = new XMLHttpRequest();
 			xhttp.open("GET","https://floridapolytechnic.instructure.com/"+
@@ -9,7 +11,8 @@
 			"?access_token=2607~Bb0VkZvZnEhYmBcO9oFcXLbytd04CBp0v3NU9jEvbfDm3qoIZclfiPb6dUshSvhW"
 			,true);
 			xhttp.onreadystatechange = function() {
-				printf("hi");
+				var myDoc = document.getElementById("textbody");
+				myDoc.innerHTML += "hi"
 			}
 			xhttp.send();
 		</script>
