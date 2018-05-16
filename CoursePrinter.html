@@ -3,7 +3,7 @@
 	</head>
 	<body>
 		<script>
-			var xhttp = new XMLHttpRequest();
+			/*var xhttp = new XMLHttpRequest();
 			xhttp.open("GET","https://floridapolytechnic.instructure.com/"+
 			"api/v1/users/2525/courses"+
 			"?access_token=2607~Bb0VkZvZnEhYmBcO9oFcXLbytd04CBp0v3NU9jEvbfDm3qoIZclfiPb6dUshSvhW"
@@ -11,7 +11,14 @@
 			xhttp.onreadystatechange = function() {
 				printf("hi");
 			}
-			xhttp.send();
+			xhttp.send();*/
+			$.get("https://floridapolytechnic.instructure.com/"+
+				"api/v1/users/2525/courses"+
+				"?access_token=2607~Bb0VkZvZnEhYmBcO9oFcXLbytd04CBp0v3NU9jEvbfDm3qoIZclfiPb6dUshSvhW",
+				function(data, status){
+					alert("Data: " + data + "\nStatus: " + status);
+				}
+			);
 		</script>
 	</body>
 </html>
